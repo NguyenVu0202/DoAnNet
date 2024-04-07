@@ -1,7 +1,28 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\DoAnNet\\DoAnNhomNet\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2FC7522D-4EA7-4A48-A379-CCEE89572440}|DoAnNhomNet\\DoAnNhomNet.csproj|d:\\doannet\\doannhomnet\\doannhomnet\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2FC7522D-4EA7-4A48-A379-CCEE89572440}|DoAnNhomNet\\DoAnNhomNet.csproj|solutionrelative:doannhomnet\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2FC7522D-4EA7-4A48-A379-CCEE89572440}|DoAnNhomNet\\DoAnNhomNet.csproj|d:\\doannet\\doannhomnet\\doannhomnet\\frmregister.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2FC7522D-4EA7-4A48-A379-CCEE89572440}|DoAnNhomNet\\DoAnNhomNet.csproj|solutionrelative:doannhomnet\\frmregister.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2FC7522D-4EA7-4A48-A379-CCEE89572440}|DoAnNhomNet\\DoAnNhomNet.csproj|d:\\doannet\\doannhomnet\\doannhomnet\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2FC7522D-4EA7-4A48-A379-CCEE89572440}|DoAnNhomNet\\DoAnNhomNet.csproj|solutionrelative:doannhomnet\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{747B1F74-35FF-4A5C-955D-33181E9EB125}|BUS\\BUS.csproj|d:\\doannet\\doannhomnet\\bus\\busaccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{747B1F74-35FF-4A5C-955D-33181E9EB125}|BUS\\BUS.csproj|solutionrelative:bus\\busaccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6BA1E93-7C9E-4CB5-87A0-45FA12A72B67}|DAO\\DAO.csproj|d:\\doannet\\doannhomnet\\dao\\daoaccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D6BA1E93-7C9E-4CB5-87A0-45FA12A72B67}|DAO\\DAO.csproj|solutionrelative:dao\\daoaccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,11 +30,74 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{74946827-37a0-11d2-a273-00c04f8ef4ff}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FrmLogin.cs",
+              "DocumentMoniker": "D:\\DoAnNet\\DoAnNhomNet\\DoAnNhomNet\\FrmLogin.cs",
+              "RelativeDocumentMoniker": "DoAnNhomNet\\FrmLogin.cs",
+              "ToolTip": "D:\\DoAnNet\\DoAnNhomNet\\DoAnNhomNet\\FrmLogin.cs",
+              "RelativeToolTip": "DoAnNhomNet\\FrmLogin.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACcAAABaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-07T06:38:46.985Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "FrmLogin.cs [Design]",
+              "DocumentMoniker": "D:\\DoAnNet\\DoAnNhomNet\\DoAnNhomNet\\FrmLogin.cs",
+              "RelativeDocumentMoniker": "DoAnNhomNet\\FrmLogin.cs",
+              "ToolTip": "D:\\DoAnNet\\DoAnNhomNet\\DoAnNhomNet\\FrmLogin.cs [Design]",
+              "RelativeToolTip": "DoAnNhomNet\\FrmLogin.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-07T06:00:18.316Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FrmRegister.cs [Design]",
+              "DocumentMoniker": "D:\\DoAnNet\\DoAnNhomNet\\DoAnNhomNet\\FrmRegister.cs",
+              "RelativeDocumentMoniker": "DoAnNhomNet\\FrmRegister.cs",
+              "ToolTip": "D:\\DoAnNet\\DoAnNhomNet\\DoAnNhomNet\\FrmRegister.cs [Design]",
+              "RelativeToolTip": "DoAnNhomNet\\FrmRegister.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-07T06:00:05.008Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "BUSAccount.cs",
+              "DocumentMoniker": "D:\\DoAnNet\\DoAnNhomNet\\BUS\\BUSAccount.cs",
+              "RelativeDocumentMoniker": "BUS\\BUSAccount.cs",
+              "ToolTip": "D:\\DoAnNet\\DoAnNhomNet\\BUS\\BUSAccount.cs",
+              "RelativeToolTip": "BUS\\BUSAccount.cs",
+              "ViewState": "AQIAACAAAAAAAAAAAAAgwDUAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-07T05:59:12.856Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "DAOAccount.cs",
+              "DocumentMoniker": "D:\\DoAnNet\\DoAnNhomNet\\DAO\\DAOAccount.cs",
+              "RelativeDocumentMoniker": "DAO\\DAOAccount.cs",
+              "ToolTip": "D:\\DoAnNet\\DoAnNhomNet\\DAO\\DAOAccount.cs",
+              "RelativeToolTip": "DAO\\DAOAccount.cs",
+              "ViewState": "AQIAACkAAAAAAAAAAAAkwDAAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-07T05:58:57.344Z",
+              "EditorCaption": ""
             }
           ]
         }
