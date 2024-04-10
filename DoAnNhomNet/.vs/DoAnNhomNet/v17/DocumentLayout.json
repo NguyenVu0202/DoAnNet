@@ -1,7 +1,32 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\DoAnNet\\DoAnNhomNet\\",
-  "Documents": [],
+  "WorkspaceRootPath": "C:\\Users\\NGUYEN VU\\Desktop\\DoAnNhomNet\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2FC7522D-4EA7-4A48-A379-CCEE89572440}|DoAnNhomNet\\DoAnNhomNet.csproj|c:\\users\\nguyen vu\\desktop\\doannhomnet\\doannhomnet\\frmkhachhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2FC7522D-4EA7-4A48-A379-CCEE89572440}|DoAnNhomNet\\DoAnNhomNet.csproj|solutionrelative:doannhomnet\\frmkhachhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2FC7522D-4EA7-4A48-A379-CCEE89572440}|DoAnNhomNet\\DoAnNhomNet.csproj|c:\\users\\nguyen vu\\desktop\\doannhomnet\\doannhomnet\\frmkhachhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2FC7522D-4EA7-4A48-A379-CCEE89572440}|DoAnNhomNet\\DoAnNhomNet.csproj|solutionrelative:doannhomnet\\frmkhachhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{747B1F74-35FF-4A5C-955D-33181E9EB125}|BUS\\BUS.csproj|c:\\users\\nguyen vu\\desktop\\doannhomnet\\bus\\buskhachhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{747B1F74-35FF-4A5C-955D-33181E9EB125}|BUS\\BUS.csproj|solutionrelative:bus\\buskhachhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6BA1E93-7C9E-4CB5-87A0-45FA12A72B67}|DAO\\DAO.csproj|c:\\users\\nguyen vu\\desktop\\doannhomnet\\dao\\daokhachhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D6BA1E93-7C9E-4CB5-87A0-45FA12A72B67}|DAO\\DAO.csproj|solutionrelative:dao\\daokhachhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2FC7522D-4EA7-4A48-A379-CCEE89572440}|DoAnNhomNet\\DoAnNhomNet.csproj|c:\\users\\nguyen vu\\desktop\\doannhomnet\\doannhomnet\\frmmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2FC7522D-4EA7-4A48-A379-CCEE89572440}|DoAnNhomNet\\DoAnNhomNet.csproj|solutionrelative:doannhomnet\\frmmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2FC7522D-4EA7-4A48-A379-CCEE89572440}|DoAnNhomNet\\DoAnNhomNet.csproj|c:\\users\\nguyen vu\\desktop\\doannhomnet\\doannhomnet\\frmregister.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2FC7522D-4EA7-4A48-A379-CCEE89572440}|DoAnNhomNet\\DoAnNhomNet.csproj|solutionrelative:doannhomnet\\frmregister.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,11 +34,87 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{74946827-37a0-11d2-a273-00c04f8ef4ff}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "FrmRegister.cs",
+              "DocumentMoniker": "C:\\Users\\NGUYEN VU\\Desktop\\DoAnNhomNet\\DoAnNhomNet\\FrmRegister.cs",
+              "RelativeDocumentMoniker": "DoAnNhomNet\\FrmRegister.cs",
+              "ToolTip": "C:\\Users\\NGUYEN VU\\Desktop\\DoAnNhomNet\\DoAnNhomNet\\FrmRegister.cs",
+              "RelativeToolTip": "DoAnNhomNet\\FrmRegister.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-10T08:04:57.794Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FrmKhachHang.cs",
+              "DocumentMoniker": "C:\\Users\\NGUYEN VU\\Desktop\\DoAnNhomNet\\DoAnNhomNet\\FrmKhachHang.cs",
+              "RelativeDocumentMoniker": "DoAnNhomNet\\FrmKhachHang.cs",
+              "ToolTip": "C:\\Users\\NGUYEN VU\\Desktop\\DoAnNhomNet\\DoAnNhomNet\\FrmKhachHang.cs",
+              "RelativeToolTip": "DoAnNhomNet\\FrmKhachHang.cs",
+              "ViewState": "AQIAACsAAAAAAAAAAAAvwDoAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-10T08:04:43.243Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "BUSKhachHang.cs",
+              "DocumentMoniker": "C:\\Users\\NGUYEN VU\\Desktop\\DoAnNhomNet\\BUS\\BUSKhachHang.cs",
+              "RelativeDocumentMoniker": "BUS\\BUSKhachHang.cs",
+              "ToolTip": "C:\\Users\\NGUYEN VU\\Desktop\\DoAnNhomNet\\BUS\\BUSKhachHang.cs",
+              "RelativeToolTip": "BUS\\BUSKhachHang.cs",
+              "ViewState": "AQIAAEQAAAAAAAAAAAAswFMAAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-10T07:56:26.459Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FrmKhachHang.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\NGUYEN VU\\Desktop\\DoAnNhomNet\\DoAnNhomNet\\FrmKhachHang.cs",
+              "RelativeDocumentMoniker": "DoAnNhomNet\\FrmKhachHang.cs",
+              "ToolTip": "C:\\Users\\NGUYEN VU\\Desktop\\DoAnNhomNet\\DoAnNhomNet\\FrmKhachHang.cs [Design]",
+              "RelativeToolTip": "DoAnNhomNet\\FrmKhachHang.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-10T07:51:07.083Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DAOKhachHang.cs",
+              "DocumentMoniker": "C:\\Users\\NGUYEN VU\\Desktop\\DoAnNhomNet\\DAO\\DAOKhachHang.cs",
+              "RelativeDocumentMoniker": "DAO\\DAOKhachHang.cs",
+              "ToolTip": "C:\\Users\\NGUYEN VU\\Desktop\\DoAnNhomNet\\DAO\\DAOKhachHang.cs",
+              "RelativeToolTip": "DAO\\DAOKhachHang.cs",
+              "ViewState": "AQIAAF8AAAAAAAAAAAAQwGIAAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-10T07:51:57.612Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "FrmMenu.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\NGUYEN VU\\Desktop\\DoAnNhomNet\\DoAnNhomNet\\FrmMenu.cs",
+              "RelativeDocumentMoniker": "DoAnNhomNet\\FrmMenu.cs",
+              "ToolTip": "C:\\Users\\NGUYEN VU\\Desktop\\DoAnNhomNet\\DoAnNhomNet\\FrmMenu.cs [Design]",
+              "RelativeToolTip": "DoAnNhomNet\\FrmMenu.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-10T07:49:51.314Z",
+              "EditorCaption": " [Design]"
             }
           ]
         }
