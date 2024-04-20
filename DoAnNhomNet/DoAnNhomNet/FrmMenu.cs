@@ -30,5 +30,12 @@ namespace DoAnNhomNet
             frmNhanVien.MdiParent = this;
             frmNhanVien.Show();
         }
+
+        private void mnuDanhMucHang_Click(object sender, EventArgs e)
+        {
+            FormDanhMucHang formDanhMucHang = new FormDanhMucHang();
+            formDanhMucHang.MdiParent = this;
+            formDanhMucHang.Show();
+        }
     }
 }
