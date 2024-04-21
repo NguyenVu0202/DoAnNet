@@ -97,7 +97,7 @@
       <Column Name="MaHang" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
       <Column Name="TenSP" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
       <Column Name="GiaBan" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="HinhAnh" Type="System.Data.Linq.Binary" DbType="Image" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="HinhAnh" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
       <Column Name="GhiChu" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
       <Association Name="SanPham_ChiTietHoaDon" Member="ChiTietHoaDons" ThisKey="MaSP" OtherKey="MaSP" Type="ChiTietHoaDon" />
       <Association Name="SanPham_Kho" Member="Khos" ThisKey="MaSP" OtherKey="MaSP" Type="Kho" />

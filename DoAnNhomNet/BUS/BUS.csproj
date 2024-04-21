@@ -49,6 +49,9 @@
     <Compile Include="BUSAccount.cs" />
     <Compile Include="BUSKhachHang.cs" />
     <Compile Include="BUSNhanVien.cs" />
+    <Compile Include="BUSThongKeLuongTheoCH.cs" />
+    <Compile Include="BUSTimKiemKhachHang.cs" />
+    <Compile Include="BUSTimKiemNhanVien.cs" />
     <Compile Include="BUS_Hang.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>

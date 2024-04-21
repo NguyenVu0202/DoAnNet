@@ -1995,7 +1995,7 @@ namespace DAO
 		
 		private System.Nullable<int> _GiaBan;
 		
-		private System.Data.Linq.Binary _HinhAnh;
+		private string _HinhAnh;
 		
 		private string _GhiChu;
 		
@@ -2021,7 +2021,7 @@ namespace DAO
     partial void OnTenSPChanged();
     partial void OnGiaBanChanging(System.Nullable<int> value);
     partial void OnGiaBanChanged();
-    partial void OnHinhAnhChanging(System.Data.Linq.Binary value);
+    partial void OnHinhAnhChanging(string value);
     partial void OnHinhAnhChanged();
     partial void OnGhiChuChanging(string value);
     partial void OnGhiChuChanged();
@@ -2144,8 +2144,8 @@ namespace DAO
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_HinhAnh", DbType="Image", UpdateCheck=UpdateCheck.Never)]
-		public System.Data.Linq.Binary HinhAnh
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_HinhAnh", DbType="NVarChar(1000)")]
+		public string HinhAnh
 		{
 			get
 			{

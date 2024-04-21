@@ -1,7 +1,20 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\NGUYEN VU\\Desktop\\DoAnNhomNet\\",
-  "Documents": [],
+  "WorkspaceRootPath": "D:\\V\u0169\\Window Form\\DoAnNhomNet\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{747B1F74-35FF-4A5C-955D-33181E9EB125}|BUS\\BUS.csproj|d:\\v\u0169\\window form\\doannhomnet\\bus\\busthongkeluongtheoch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{747B1F74-35FF-4A5C-955D-33181E9EB125}|BUS\\BUS.csproj|solutionrelative:bus\\busthongkeluongtheoch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2FC7522D-4EA7-4A48-A379-CCEE89572440}|DoAnNhomNet\\DoAnNhomNet.csproj|D:\\V\u0169\\Window Form\\DoAnNhomNet\\doannhomnet\\frmthongkeluongnhanvientheocuahang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2FC7522D-4EA7-4A48-A379-CCEE89572440}|DoAnNhomNet\\DoAnNhomNet.csproj|solutionrelative:doannhomnet\\frmthongkeluongnhanvientheocuahang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2FC7522D-4EA7-4A48-A379-CCEE89572440}|DoAnNhomNet\\DoAnNhomNet.csproj|D:\\V\u0169\\Window Form\\DoAnNhomNet\\doannhomnet\\frmthongkeluongnhanvientheocuahang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2FC7522D-4EA7-4A48-A379-CCEE89572440}|DoAnNhomNet\\DoAnNhomNet.csproj|solutionrelative:doannhomnet\\frmthongkeluongnhanvientheocuahang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,11 +22,47 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{74946827-37a0-11d2-a273-00c04f8ef4ff}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "BUSThongKeLuongTheoCH.cs",
+              "DocumentMoniker": "D:\\V\u0169\\Window Form\\DoAnNhomNet\\BUS\\BUSThongKeLuongTheoCH.cs",
+              "RelativeDocumentMoniker": "BUS\\BUSThongKeLuongTheoCH.cs",
+              "ToolTip": "D:\\V\u0169\\Window Form\\DoAnNhomNet\\BUS\\BUSThongKeLuongTheoCH.cs",
+              "RelativeToolTip": "BUS\\BUSThongKeLuongTheoCH.cs",
+              "ViewState": "AQIAABYAAAAAAAAAAAAQwCMAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-21T08:12:11.25Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FrmThongKeLuongNhanVienTheoCuaHang.cs",
+              "DocumentMoniker": "D:\\V\u0169\\Window Form\\DoAnNhomNet\\DoAnNhomNet\\FrmThongKeLuongNhanVienTheoCuaHang.cs",
+              "RelativeDocumentMoniker": "DoAnNhomNet\\FrmThongKeLuongNhanVienTheoCuaHang.cs",
+              "ToolTip": "D:\\V\u0169\\Window Form\\DoAnNhomNet\\DoAnNhomNet\\FrmThongKeLuongNhanVienTheoCuaHang.cs",
+              "RelativeToolTip": "DoAnNhomNet\\FrmThongKeLuongNhanVienTheoCuaHang.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAArwBwAAAA9AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-21T08:10:45.791Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "FrmThongKeLuongNhanVienTheoCuaHang.cs [Design]",
+              "DocumentMoniker": "D:\\V\u0169\\Window Form\\DoAnNhomNet\\DoAnNhomNet\\FrmThongKeLuongNhanVienTheoCuaHang.cs",
+              "RelativeDocumentMoniker": "DoAnNhomNet\\FrmThongKeLuongNhanVienTheoCuaHang.cs",
+              "ToolTip": "D:\\V\u0169\\Window Form\\DoAnNhomNet\\DoAnNhomNet\\FrmThongKeLuongNhanVienTheoCuaHang.cs [Design]",
+              "RelativeToolTip": "DoAnNhomNet\\FrmThongKeLuongNhanVienTheoCuaHang.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-21T08:10:44.115Z"
             }
           ]
         }

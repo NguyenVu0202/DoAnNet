@@ -37,5 +37,26 @@ namespace DoAnNhomNet
             formDanhMucHang.MdiParent = this;
             formDanhMucHang.Show();
         }
+
+        private void mnuTimKiemKhachHang_Click(object sender, EventArgs e)
+        {
+            FrmTimKiemKhachHang frmTimKiemKhachHang = new FrmTimKiemKhachHang();
+            frmTimKiemKhachHang.MdiParent = this;
+            frmTimKiemKhachHang.Show();
+        }
+
+        private void mnuTimKiemNhanVien_Click(object sender, EventArgs e)
+        {
+            FrmTimKiemNhanVien frmTimKiemNhanVien = new FrmTimKiemNhanVien();
+            frmTimKiemNhanVien.MdiParent = this;
+            frmTimKiemNhanVien.Show();
+        }
+
+        private void mnuThongKeLuongNV_Click(object sender, EventArgs e)
+        {
+            FrmThongKeLuongNhanVienTheoCuaHang frm = new FrmThongKeLuongNhanVienTheoCuaHang();
+            frm.MdiParent = this;
+            frm.Show();
+        }
     }
 }
