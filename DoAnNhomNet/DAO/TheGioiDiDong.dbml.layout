@@ -1,1 +1,136 @@
-﻿
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="TheGioiDiDong">
+  <DataContextMoniker Name="/TheGioiDiDongDataContext" />
+  <nestedChildShapes>
+    <classShape Id="9af2c2cc-a3dd-432f-b04f-5bc1ec985578" absoluteBounds="1.375, 0.875, 2, 1.3862939453125">
+      <DataClassMoniker Name="/TheGioiDiDongDataContext/Account" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b017748b-3829-4a75-a022-44e072433f7d" absoluteBounds="1.3900000000000001, 1.335, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="bd9e231f-5b3b-48ba-96a2-ed8400a7e875" absoluteBounds="4.25, 1.125, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/TheGioiDiDongDataContext/ChiTietHoaDon" />
+      <nestedChildShapes>
+        <elementListCompartment Id="5dedcd63-2071-4e97-abcf-7b26eab5c828" absoluteBounds="4.265, 1.585, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="f275f6a0-310e-45c9-a1d8-809b599fdc84" absoluteBounds="0.5, 3, 2, 1.1939925130208333">
+      <DataClassMoniker Name="/TheGioiDiDongDataContext/CuaHang" />
+      <nestedChildShapes>
+        <elementListCompartment Id="df87e761-1abe-45cc-8436-b6d5f7b45595" absoluteBounds="0.515, 3.46, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="3b4e3151-73ee-456c-a646-d3b5342fbc10" absoluteBounds="4.5, 0.5, 2, 1.1939925130208333">
+      <DataClassMoniker Name="/TheGioiDiDongDataContext/Hang" />
+      <nestedChildShapes>
+        <elementListCompartment Id="dd6db4d8-16ed-4816-b1aa-b3ac8aff0a81" absoluteBounds="4.515, 0.96, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="a9fbfaaf-8022-40e8-a624-f39ab59ed793" absoluteBounds="2.875, 3.5, 2, 1.7708968098958331">
+      <DataClassMoniker Name="/TheGioiDiDongDataContext/HoaDon" />
+      <nestedChildShapes>
+        <elementListCompartment Id="61c9c59f-9251-4479-8e13-fe894310df50" absoluteBounds="2.89, 3.96, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(4.5625 : 3.5); (4.5625 : 3.28049967447917)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/TheGioiDiDongDataContext/HoaDon/HoaDon_ChiTietHoaDon" />
+      <nodes>
+        <classShapeMoniker Id="a9fbfaaf-8022-40e8-a624-f39ab59ed793" />
+        <classShapeMoniker Id="bd9e231f-5b3b-48ba-96a2-ed8400a7e875" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="7d9afa16-b55f-461d-b39e-01a2497625af" absoluteBounds="6.25, 3.875, 2, 1.7708968098958331">
+      <DataClassMoniker Name="/TheGioiDiDongDataContext/KhachHang" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c2dd8b3b-d84f-4244-8ec8-2c494129318d" absoluteBounds="6.265, 4.335, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(6.25 : 4.57294840494792); (4.875 : 4.57294840494792)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/TheGioiDiDongDataContext/KhachHang/KhachHang_HoaDon" />
+      <nodes>
+        <classShapeMoniker Id="7d9afa16-b55f-461d-b39e-01a2497625af" />
+        <classShapeMoniker Id="a9fbfaaf-8022-40e8-a624-f39ab59ed793" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="ce9ac99e-f179-4cbf-b92d-9865b0317b78" absoluteBounds="0.75, 0.625, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/TheGioiDiDongDataContext/Kho" />
+      <nestedChildShapes>
+        <elementListCompartment Id="57e3399c-a918-4944-80d6-acb7ee4a96c3" absoluteBounds="0.765, 1.085, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(2.5 : 3); (2.67607443490112 : 2.82392556509888 : JumpStart); (2.79392556509888 : 2.70607443490112 : JumpEnd); (2.875 : 2.625); (2.875 : 2.57859537760417); (3.125 : 2.57859537760417); (2.75 : 2.20359537760417)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/TheGioiDiDongDataContext/CuaHang/CuaHang_Kho" />
+      <nodes>
+        <classShapeMoniker Id="f275f6a0-310e-45c9-a1d8-809b599fdc84" />
+        <classShapeMoniker Id="ce9ac99e-f179-4cbf-b92d-9865b0317b78" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="5913f5a3-b539-4483-bfe8-f115ae831c7b" absoluteBounds="0.5, 2.25, 2, 1.1939925130208333">
+      <DataClassMoniker Name="/TheGioiDiDongDataContext/Loai" />
+      <nestedChildShapes>
+        <elementListCompartment Id="6b918da4-e20f-49fe-af53-2da74ce9f0ff" absoluteBounds="0.515, 2.71, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="9a849c50-5e47-4ce1-8e58-abba365844cd" absoluteBounds="6.75, 2, 2, 2.3478011067708335">
+      <DataClassMoniker Name="/TheGioiDiDongDataContext/NhanVien" />
+      <nestedChildShapes>
+        <elementListCompartment Id="34d59710-dbf5-428b-9de5-1db64a69dd54" absoluteBounds="6.765, 2.46, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(6.75 : 3.53737458683894); (6.485 : 3.53737458683894); (6.485 : 3.43049967447917); (2.735 : 3.43049967447917); (2.735 : 2.46); (2.375 : 2.46); (2.375 : 2.2612939453125)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/TheGioiDiDongDataContext/NhanVien/NhanVien_Account" />
+      <nodes>
+        <classShapeMoniker Id="9a849c50-5e47-4ce1-8e58-abba365844cd" />
+        <classShapeMoniker Id="9af2c2cc-a3dd-432f-b04f-5bc1ec985578" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(6.75 : 3.65625); (4.875 : 3.65625)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/TheGioiDiDongDataContext/NhanVien/NhanVien_HoaDon" />
+      <nodes>
+        <classShapeMoniker Id="9a849c50-5e47-4ce1-8e58-abba365844cd" />
+        <classShapeMoniker Id="a9fbfaaf-8022-40e8-a624-f39ab59ed793" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(1.5 : 4.19399251302083); (1.5 : 4.25649251302083); (2.5625 : 4.25649251302083); (2.5625 : 3.34299967447917); (2.65166666666667 : 3.34299967447917 : JumpStart); (2.81833333333333 : 3.34299967447917 : JumpEnd); (6.65625 : 3.34299967447917); (6.65625 : 2.82694806690705); (6.75 : 2.82694806690705)]" fixedFrom="Algorithm" fixedTo="NotFixed">
+      <AssociationMoniker Name="/TheGioiDiDongDataContext/CuaHang/CuaHang_NhanVien" />
+      <nodes>
+        <classShapeMoniker Id="f275f6a0-310e-45c9-a1d8-809b599fdc84" />
+        <classShapeMoniker Id="9a849c50-5e47-4ce1-8e58-abba365844cd" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="c134ec03-7e74-4a07-9caa-57dbf62d2558" absoluteBounds="7.25, 1.125, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/TheGioiDiDongDataContext/SanPham" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e81f8102-7782-4d07-9b1d-af9bdad20b53" absoluteBounds="7.265, 1.585, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(7.25 : 1.84699625651042); (6.25 : 1.84699625651042)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/TheGioiDiDongDataContext/SanPham/SanPham_ChiTietHoaDon" />
+      <nodes>
+        <classShapeMoniker Id="c134ec03-7e74-4a07-9caa-57dbf62d2558" />
+        <classShapeMoniker Id="bd9e231f-5b3b-48ba-96a2-ed8400a7e875" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.25 : 1.125); (8.25 : 0.325); (1.75 : 0.325); (1.75 : 0.625)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/TheGioiDiDongDataContext/SanPham/SanPham_Kho" />
+      <nodes>
+        <classShapeMoniker Id="c134ec03-7e74-4a07-9caa-57dbf62d2558" />
+        <classShapeMoniker Id="ce9ac99e-f179-4cbf-b92d-9865b0317b78" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(6.5 : 1.40949625651042); (7.25 : 1.40949625651042)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/TheGioiDiDongDataContext/Hang/Hang_SanPham" />
+      <nodes>
+        <classShapeMoniker Id="3b4e3151-73ee-456c-a646-d3b5342fbc10" />
+        <classShapeMoniker Id="c134ec03-7e74-4a07-9caa-57dbf62d2558" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.5 : 2.75804518880208); (2.65166666666667 : 2.75804518880208 : JumpStart); (2.82528814453125 : 2.75804518880208 : JumpEnd); (4.1875 : 2.75804518880208); (4.1875 : 0.4375); (7.718748 : 0.4375); (7.718748 : 1.125)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/TheGioiDiDongDataContext/Loai/Loai_SanPham" />
+      <nodes>
+        <classShapeMoniker Id="5913f5a3-b539-4483-bfe8-f115ae831c7b" />
+        <classShapeMoniker Id="c134ec03-7e74-4a07-9caa-57dbf62d2558" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
