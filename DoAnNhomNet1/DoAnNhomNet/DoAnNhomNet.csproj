@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{747B1F74-35FF-4A5C-955D-33181E9EB125}</ProjectGuid>
+    <ProjectGuid>{2FC7522D-4EA7-4A48-A379-CCEE89572440}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>BUS</RootNamespace>
-    <AssemblyName>BUS</AssemblyName>
+    <RootNamespace>DoAnNhomNet</RootNamespace>
+    <AssemblyName>DoAnNhomNet</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -35,6 +35,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -52,8 +53,56 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormDanhMucHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDanhMucHang.Designer.cs">
+      <DependentUpon>FormDanhMucHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDanhSachCuaHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDanhSachCuaHang.Designer.cs">
+      <DependentUpon>frmDanhSachCuaHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDanhSachKho.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDanhSachKho.Designer.cs">
+      <DependentUpon>frmDanhSachKho.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDanhSachLoai.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDanhSachLoai.Designer.cs">
+      <DependentUpon>frmDanhSachLoai.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDanhSachSanPham.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDanhSachSanPham.Designer.cs">
+      <DependentUpon>frmDanhSachSanPham.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDanhMucHang.resx">
+      <DependentUpon>FormDanhMucHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDanhSachCuaHang.resx">
+      <DependentUpon>frmDanhSachCuaHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDanhSachKho.resx">
+      <DependentUpon>frmDanhSachKho.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDanhSachLoai.resx">
+      <DependentUpon>frmDanhSachLoai.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDanhSachSanPham.resx">
+      <DependentUpon>frmDanhSachSanPham.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -62,6 +111,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -77,10 +127,20 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\BUS\BUS.csproj">
+      <Project>{747b1f74-35ff-4a5c-955d-33181e9eb125}</Project>
+      <Name>BUS</Name>
+    </ProjectReference>
     <ProjectReference Include="..\DAO\DAO.csproj">
       <Project>{d6ba1e93-7c9e-4cb5-87a0-45fa12a72b67}</Project>
       <Name>DAO</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot 2024-04-17 144324.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot 2024-04-18 131820.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
