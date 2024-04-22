@@ -33,9 +33,9 @@ namespace DoAnNhomNet
 
         private void mnuDanhMucHang_Click(object sender, EventArgs e)
         {
-            FormDanhMucHang formDanhMucHang = new FormDanhMucHang();
-            formDanhMucHang.MdiParent = this;
-            formDanhMucHang.Show();
+            FormDanhMucHang frm = new FormDanhMucHang();
+            frm.Show();
+            frm.MdiParent = this;
         }
 
         private void mnuTimKiemKhachHang_Click(object sender, EventArgs e)
@@ -57,6 +57,34 @@ namespace DoAnNhomNet
             FrmThongKeLuongNhanVienTheoCuaHang frm = new FrmThongKeLuongNhanVienTheoCuaHang();
             frm.MdiParent = this;
             frm.Show();
+        }
+
+        private void mnuSanPham_Click(object sender, EventArgs e)
+        {
+            frmDanhSachSanPham fr = new frmDanhSachSanPham();
+            fr.MdiParent = this;
+            fr.Show();
+        }
+
+        private void mnuDanhMucLoai_Click(object sender, EventArgs e)
+        {
+            frmDanhSachLoai frm = new frmDanhSachLoai();
+            frm.Show();
+            frm.MdiParent = this;
+        }
+
+        private void mnuCuaHang_Click(object sender, EventArgs e)
+        {
+            frmDanhSachCuaHang frm = new frmDanhSachCuaHang();
+            frm.Show();
+            frm.MdiParent = this;
+        }
+
+        private void mnuKho_Click(object sender, EventArgs e)
+        {
+            frmDanhSachKho frm = new frmDanhSachKho();
+            frm.Show();
+            frm.MdiParent = this;
         }
     }
 }
