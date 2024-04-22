@@ -48,6 +48,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DAOAccount.cs" />
+    <Compile Include="DAOHoaDon.cs" />
     <Compile Include="DAO_CuaHang.cs" />
     <Compile Include="DAOKhachHang.cs" />
     <Compile Include="DAONhanVien.cs" />

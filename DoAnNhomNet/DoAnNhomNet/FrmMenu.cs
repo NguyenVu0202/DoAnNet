@@ -86,5 +86,12 @@ namespace DoAnNhomNet
             frm.Show();
             frm.MdiParent = this;
         }
+
+        private void mnuHoaDon_Click(object sender, EventArgs e)
+        {
+            FrmHoaDon frm = new FrmHoaDon();
+            frm.MdiParent = this;
+            frm.Show();
+        }
     }
 }
