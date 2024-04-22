@@ -110,5 +110,10 @@ namespace BUS
         {
             DAO_SanPham.Instance.Xoa(masp.Text);
         }
+
+        public void LoadDgvLenForm(TextBox masp, TextBox tensp, ComboBox tenloai, ComboBox tenhang, TextBox giaban, PictureBox picHinhAnh, TextBox ghichu, DataGridView data)
+        {
+            DAO_SanPham.Instance.LoadDgvLenForm(masp, tensp, tenloai, tenhang, giaban, picHinhAnh, ghichu, data);
+        }
     }
 }

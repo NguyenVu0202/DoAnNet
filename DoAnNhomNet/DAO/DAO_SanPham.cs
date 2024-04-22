@@ -6,6 +6,7 @@ using System.Drawing.Imaging;
 using System.IO;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -158,6 +159,29 @@ namespace DAO
             {
                 var sanpham = db.SanPhams.SingleOrDefault(sp => sp.MaSP == masp.Text);
                 return sanpham.HinhAnh;
+            }
+        }
+
+        public void LoadDgvLenForm(TextBox masp, TextBox tensp, ComboBox tenloai, ComboBox tenhang, TextBox giaban, PictureBox picHinhAnh, TextBox ghichu, DataGridView data)
+        {
+            using (TheGioiDiDongDataContext db = new TheGioiDiDongDataContext())
+            {
+                var rowIndex = data.SelectedCells[0].RowIndex;
+                var row = data.Rows[rowIndex];
+                masp.Text = row.Cells[0].Value.ToString().Trim();
+                tensp.Text = row.Cells[1].Value.ToString().Trim();
+                var loai = (from l in db.Loais
+                          where l.MaLoai == row.Cells[2].Value.ToString().Trim()
+                          select l.TenLoai).FirstOrDefault();
+                tenloai.Text = loai.ToString();
+                var hang = (from h in db.Hangs
+                            where h.MaHang == row.Cells[3].Value.ToString().Trim()
+                            select h.TenHang).FirstOrDefault();
+                tenhang.Text = hang.ToString();
+                giaban.Text = row.Cells[4].Value.ToString().Trim();
+                var anh = row.Cells[5].Value as Image;
+                picHinhAnh.Image = anh;
+                ghichu.Text = row.Cells[6].Value.ToString().Trim();
             }
         }
     }

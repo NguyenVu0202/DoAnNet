@@ -131,15 +131,7 @@ namespace DoAnNhomNet
 
         private void dgvSanPham_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
         {
-            var row = dgvSanPham.Rows[dgvSanPham.CurrentCell.RowIndex];
-            txtMaSP.Text = row.Cells["MaSP"].Value.ToString();
-            cboTenLoai.Text = row.Cells["MaLoai"].Value.ToString();
-            cboTenHang.Text = row.Cells["MaHang"].Value.ToString();
-            txtTenSP.Text = row.Cells["TenSP"].Value.ToString();
-            txtGiaBan.Text = row.Cells["GiaBan"].Value.ToString();
-
-            var anh = row.Cells["HinhAnh"].Value as Image;
-            picHinhAnh.Image = anh;
+            BUS_SanPham.Instance.LoadDgvLenForm(txtMaSP, txtTenSP, cboTenLoai, cboTenHang, txtGiaBan, picHinhAnh, txtGhiChu, dgvSanPham);
         }
     }
 }
