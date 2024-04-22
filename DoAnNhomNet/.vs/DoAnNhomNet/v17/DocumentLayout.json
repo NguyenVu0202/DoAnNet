@@ -1,18 +1,18 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\V\u0169\\Window Form\\DoAnNhomNet\\",
+  "WorkspaceRootPath": "G:\\DoAnNhomNet\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{747B1F74-35FF-4A5C-955D-33181E9EB125}|BUS\\BUS.csproj|d:\\v\u0169\\window form\\doannhomnet\\bus\\busthongkeluongtheoch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{747B1F74-35FF-4A5C-955D-33181E9EB125}|BUS\\BUS.csproj|solutionrelative:bus\\busthongkeluongtheoch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2FC7522D-4EA7-4A48-A379-CCEE89572440}|DoAnNhomNet\\DoAnNhomNet.csproj|g:\\doannhomnet\\doannhomnet\\frmdanhsachsanpham.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2FC7522D-4EA7-4A48-A379-CCEE89572440}|DoAnNhomNet\\DoAnNhomNet.csproj|solutionrelative:doannhomnet\\frmdanhsachsanpham.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2FC7522D-4EA7-4A48-A379-CCEE89572440}|DoAnNhomNet\\DoAnNhomNet.csproj|D:\\V\u0169\\Window Form\\DoAnNhomNet\\doannhomnet\\frmthongkeluongnhanvientheocuahang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2FC7522D-4EA7-4A48-A379-CCEE89572440}|DoAnNhomNet\\DoAnNhomNet.csproj|solutionrelative:doannhomnet\\frmthongkeluongnhanvientheocuahang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2FC7522D-4EA7-4A48-A379-CCEE89572440}|DoAnNhomNet\\DoAnNhomNet.csproj|g:\\doannhomnet\\doannhomnet\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2FC7522D-4EA7-4A48-A379-CCEE89572440}|DoAnNhomNet\\DoAnNhomNet.csproj|solutionrelative:doannhomnet\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2FC7522D-4EA7-4A48-A379-CCEE89572440}|DoAnNhomNet\\DoAnNhomNet.csproj|D:\\V\u0169\\Window Form\\DoAnNhomNet\\doannhomnet\\frmthongkeluongnhanvientheocuahang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{2FC7522D-4EA7-4A48-A379-CCEE89572440}|DoAnNhomNet\\DoAnNhomNet.csproj|solutionrelative:doannhomnet\\frmthongkeluongnhanvientheocuahang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{2FC7522D-4EA7-4A48-A379-CCEE89572440}|DoAnNhomNet\\DoAnNhomNet.csproj|g:\\doannhomnet\\doannhomnet\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2FC7522D-4EA7-4A48-A379-CCEE89572440}|DoAnNhomNet\\DoAnNhomNet.csproj|solutionrelative:doannhomnet\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,7 +38,7 @@
               "RelativeToolTip": "BUS\\BUSThongKeLuongTheoCH.cs",
               "ViewState": "AQIAABYAAAAAAAAAAAAQwCMAAAAhAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-21T08:12:11.25Z",
+              "WhenOpened": "2024-04-22T04:59:32.601Z",
               "EditorCaption": ""
             },
             {
@@ -51,7 +51,8 @@
               "RelativeToolTip": "DoAnNhomNet\\FrmThongKeLuongNhanVienTheoCuaHang.cs",
               "ViewState": "AQIAAA8AAAAAAAAAAAArwBwAAAA9AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-21T08:10:45.791Z"
+              "WhenOpened": "2024-04-22T04:58:58.121Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -62,7 +63,8 @@
               "ToolTip": "D:\\V\u0169\\Window Form\\DoAnNhomNet\\DoAnNhomNet\\FrmThongKeLuongNhanVienTheoCuaHang.cs [Design]",
               "RelativeToolTip": "DoAnNhomNet\\FrmThongKeLuongNhanVienTheoCuaHang.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-21T08:10:44.115Z"
+              "WhenOpened": "2024-04-22T04:58:37.419Z",
+              "EditorCaption": " [Design]"
             }
           ]
         }

@@ -34,5 +34,13 @@ namespace BUS
         {
             DAO_Hang.Instance.Them(hang);
         }
+        public void Xoa(TextBox hang)
+        {
+             DAO_Hang.Instance.Xoa(hang);
+        }
+        public bool Sua(string maHang,Hang hang)
+        {
+            return DAO_Hang.Instance.Sua(maHang, hang);
+        }
     }
 }

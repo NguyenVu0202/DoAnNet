@@ -12,54 +12,50 @@ using System.Windows.Forms;
 
 namespace DoAnNhomNet
 {
-    public partial class FormDanhMucHang : Form
+    public partial class frmDanhSachLoai : Form
     {
-        BUS_Hang busHang = new BUS_Hang();
-        Hang h = new Hang();
-        public FormDanhMucHang()
+        public frmDanhSachLoai()
         {
             InitializeComponent();
-           
         }
         public void LoadForm()
         {
-            BUS_Hang.Instance.Xem(dgvHang);
+            BUS_Loai.Instance.Xem(dgvLoai);
         }
-
-        private void dgvHang_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void dgvLoai_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            var row = dgvHang.Rows[dgvHang.CurrentCell.RowIndex];
-            txtMaHang.Text = row.Cells["MaHang"].Value.ToString();
-            txtTenHang.Text = row.Cells["TenHang"].Value.ToString();
+            var row = dgvLoai.Rows[dgvLoai.CurrentCell.RowIndex];
+            txtMaLoai.Text = row.Cells["MaLoai"].Value.ToString();
+            txtTenLoai.Text = row.Cells["TenLoai"].Value.ToString();
         }
 
         private void btnThem_Click(object sender, EventArgs e)
         {
             try
             {
-                Hang h = new Hang
+                Loai loai = new Loai
                 {
-                    MaHang = txtMaHang.Text,
-                    TenHang = txtTenHang.Text,
+                    MaLoai = txtMaLoai.Text,
+                    TenLoai = txtTenLoai.Text,
                 };
-                busHang.Them(h);
+                BUS_Loai.Instance.Them(loai);
                 MessageBox.Show("Them thanh cong");
                 LoadForm();
-               
             }
             catch (Exception)
             {
-                MessageBox.Show("Them khong thanh cong");
+                MessageBox.Show("Them ko thanh cong!!!!!!!!!!");
             }
         }
 
+
         private void btnXoa_Click(object sender, EventArgs e)
         {
-            DialogResult kq = MessageBox.Show("Ban co muon xoa ko???","Thong Bao",
+            DialogResult kq = MessageBox.Show("Ban co muon xoa ko???", "Thong Bao",
                                            MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (kq == DialogResult.Yes)
             {
-                BUS_Hang.Instance.Xoa(txtMaHang);
+                BUS_Loai.Instance.Xoa(txtMaLoai);
                 MessageBox.Show("Xoa Thanh cong");
                 LoadForm();
             }
@@ -71,24 +67,29 @@ namespace DoAnNhomNet
 
         private void btnSua_Click(object sender, EventArgs e)
         {
-            Hang hang = new Hang
+            Loai loai = new Loai
             {
-               MaHang = txtMaHang.Text,
-               TenHang = txtTenHang.Text,
+                MaLoai = txtMaLoai.Text,
+                TenLoai = txtTenLoai.Text,
             };
 
-            BUS_Hang bus = new BUS_Hang();
-            bool result = bus.Sua(txtMaHang.Text, hang);
+            BUS_Loai bus = new BUS_Loai();
+            bool result = bus.Sua(txtMaLoai.Text, loai);
 
             if (result)
             {
                 MessageBox.Show("Sửa thông tin sản phẩm thành công!");
-                LoadForm() ;
+                LoadForm();
             }
             else
             {
                 MessageBox.Show("Không tìm thấy sản phẩm cần sửa hoặc có lỗi xảy ra khi sửa thông tin!");
             }
+        }
+
+        private void btnShow_Click(object sender, EventArgs e)
+        {
+            BUS_Loai.Instance.Xem(dgvLoai);
         }
 
         private void btnThoat_Click(object sender, EventArgs e)
@@ -99,11 +100,6 @@ namespace DoAnNhomNet
             {
                 this.Close();
             }
-        }
-
-        private void btnShow_Click(object sender, EventArgs e)
-        {
-            BUS_Hang.Instance.Xem(dgvHang);
         }
     }
 }

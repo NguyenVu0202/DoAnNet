@@ -26,11 +26,22 @@ namespace DAO.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-L5A96KD;Initial Catalog=TheGioiDiDong;Integrated Security=Tru" +
-            "e;TrustServerCertificate=True")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-BTTOVR4;Initial Catalog=TheGioiDiDong;Integrated Security=Tru" +
+            "e;Encrypt=True;TrustServerCertificate=True")]
         public string TheGioiDiDongConnectionString {
             get {
                 return ((string)(this["TheGioiDiDongConnectionString"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-L5A96KD;Initial Catalog=TheGioiDiDong;Integrated Security=Tru" +
+            "e;TrustServerCertificate=True")]
+        public string TheGioiDiDongConnectionString1 {
+            get {
+                return ((string)(this["TheGioiDiDongConnectionString1"]));
             }
         }
     }
