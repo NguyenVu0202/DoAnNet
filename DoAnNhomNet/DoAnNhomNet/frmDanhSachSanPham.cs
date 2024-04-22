@@ -52,24 +52,6 @@ namespace DoAnNhomNet
                 e.Cancel = true;
             }
         }
-
-        private void dgvSanPham_Click(object sender, EventArgs e)
-        {
-            var row = dgvSanPham.Rows[dgvSanPham.CurrentCell.RowIndex];
-            txtMaSP.Text = row.Cells["MaSP"].Value.ToString();
-            cboTenLoai.Text = row.Cells["MaLoai"].Value.ToString();
-            cboTenHang.Text = row.Cells["MaHang"].Value.ToString();
-            txtTenSP.Text = row.Cells["TenSP"].Value.ToString();
-            txtGiaBan.Text = row.Cells["GiaBan"].Value.ToString();
-
-            var anh = row.Cells["HinhAnh"].Value as Image;
-            picHinhAnh.Image = anh;
-        }
-
-        private void cboTenHang_SelectedIndexChanged(object sender, EventArgs e)
-        {
-          
-        }
         public void LoadTenLoai()
         {
             BUS_SanPham.Instance.LoadTenLoai(cboTenLoai);
@@ -92,30 +74,6 @@ namespace DoAnNhomNet
                 picHinhAnh.Image = Image.FromFile(openFileDialog.FileName);
                 txtHinhAnh.Text = Path.GetFileName(openFileDialog.FileName);
             }
-        }
-        private byte[] ConvertImageToBytes(string imagePath)
-        {
-            byte[] imageData = null;
-
-            try
-            {
-                using (FileStream fs = new FileStream(imagePath, FileMode.Open, FileAccess.Read))
-                {
-                    imageData = new byte[fs.Length];
-                    fs.Read(imageData, 0, imageData.Length);
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Lỗi khi chuyển đổi hình ảnh: " + ex.Message);
-            }
-
-            return imageData;
-        }
-
-        private void dgvSanPham_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)
-        {
-
         }
 
         private void btnChonAnh_Click(object sender, EventArgs e)
@@ -169,6 +127,19 @@ namespace DoAnNhomNet
             BUS_SanPham.Instance.Them(txtMaSP, txtTenSP, cboTenLoai, cboTenHang, txtGiaBan, txtHinhAnh, txtGhiChu);
             LoadSanPham();
 
+        }
+
+        private void dgvSanPham_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
+        {
+            var row = dgvSanPham.Rows[dgvSanPham.CurrentCell.RowIndex];
+            txtMaSP.Text = row.Cells["MaSP"].Value.ToString();
+            cboTenLoai.Text = row.Cells["MaLoai"].Value.ToString();
+            cboTenHang.Text = row.Cells["MaHang"].Value.ToString();
+            txtTenSP.Text = row.Cells["TenSP"].Value.ToString();
+            txtGiaBan.Text = row.Cells["GiaBan"].Value.ToString();
+
+            var anh = row.Cells["HinhAnh"].Value as Image;
+            picHinhAnh.Image = anh;
         }
     }
 }

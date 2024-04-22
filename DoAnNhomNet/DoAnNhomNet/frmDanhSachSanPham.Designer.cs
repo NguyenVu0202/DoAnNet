@@ -108,14 +108,14 @@
             // 
             this.dgvSanPham.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvSanPham.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvSanPham.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
-            this.dgvSanPham.Location = new System.Drawing.Point(6, 26);
+            this.dgvSanPham.Location = new System.Drawing.Point(12, 26);
             this.dgvSanPham.Name = "dgvSanPham";
-            this.dgvSanPham.RowHeadersWidth = 62;
+            this.dgvSanPham.RowHeadersWidth = 51;
             this.dgvSanPham.RowTemplate.Height = 50;
             this.dgvSanPham.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvSanPham.Size = new System.Drawing.Size(1158, 222);
             this.dgvSanPham.TabIndex = 0;
+            this.dgvSanPham.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvSanPham_CellContentClick_1);
             // 
             // grpHinhAnh
             // 
@@ -364,7 +364,6 @@
         private System.Windows.Forms.TextBox txtHinhAnh;
         private System.Windows.Forms.ComboBox cboTenLoai;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.DataGridView dgvSanPham;
         private System.Windows.Forms.GroupBox grpHinhAnh;
         private System.Windows.Forms.PictureBox picHinhAnh;
         private System.Windows.Forms.GroupBox grpThongTinSP;
@@ -386,5 +385,6 @@
         private System.Windows.Forms.Button btnLuu;
         private System.Windows.Forms.Button btnHienThi;
         private System.Windows.Forms.Button btnXoa;
+        private System.Windows.Forms.DataGridView dgvSanPham;
     }
 }

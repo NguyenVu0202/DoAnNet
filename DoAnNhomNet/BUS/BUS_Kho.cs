@@ -51,7 +51,29 @@ namespace BUS
         }
         public void LoadCuaHang(ComboBox cb)
         {
-         //   DAO_Kho.Instance.LoadComBoxTenCuaHang(cb);
+            DAO_Kho.Instance.LoadComBoBoxMaCH(cb);
+        }
+
+        public void ThemKho(TextBox maKho, ComboBox maCH, ComboBox maSP, TextBox soLuong)
+        {
+            Kho kho = new Kho
+            {
+                MaKho = maKho.Text,
+                MaCH = maCH.Text,
+                MaSP = maSP.SelectedValue.ToString().Trim(),
+                SoLuong = int.Parse(soLuong.Text)
+            };
+            DAO_Kho.Instance.ThemKho(kho);
+        }
+
+        public void XoaKho(TextBox maKho)
+        {
+            DAO_Kho.Instance.XoaKho(maKho.Text);
+        }
+
+        public void LoadDgvLenForm(TextBox maKho, ComboBox maCH, ComboBox maSP, TextBox soLuong, DataGridView data)
+        {
+            DAO_Kho.Instance.LoadDgvLenForm(maKho, maCH, maSP, soLuong, data);
         }
     }
 }

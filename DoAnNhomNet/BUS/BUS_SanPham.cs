@@ -51,6 +51,9 @@ namespace BUS
                 };
             }).ToList();
             data.DataSource = dt;
+            DataGridViewImageColumn pic = new DataGridViewImageColumn();
+            pic = (DataGridViewImageColumn)data.Columns[5];
+            pic.ImageLayout = DataGridViewImageCellLayout.Zoom;
         }
 
         public void Them(TextBox masp, TextBox tensp, ComboBox tenloai, ComboBox tenhang, TextBox giaban, TextBox hinhanh, TextBox ghichu)
