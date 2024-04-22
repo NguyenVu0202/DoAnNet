@@ -72,7 +72,7 @@ namespace DoAnNhomNet
         }
         public void LoadTenLoai()
         {
-            BUS_Kho.Instance.LoadSanPham(cboTenLoai);
+            BUS_SanPham.Instance.LoadTenLoai(cboTenLoai);
         }
         public void LoadTenHang()
         {

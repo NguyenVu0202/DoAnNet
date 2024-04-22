@@ -41,8 +41,8 @@ namespace DoAnNhomNet
         private void sảnPhẩmToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frmDanhSachSanPham fr = new frmDanhSachSanPham();
-            fr.Show();
             fr.MdiParent = this;
+            fr.Show();
         }
 
         private void khoToolStripMenuItem_Click(object sender, EventArgs e)
