@@ -104,13 +104,18 @@ namespace DAO
             {
                 using (TheGioiDiDongDataContext db = new TheGioiDiDongDataContext())
                 {
+                    string [] cattenanh = hinhanh.Text.Split('\\');
+                    int lastIndex = cattenanh.Length - 1;
+                    string tenanh = cattenanh[lastIndex];
+                    string duongdan = Path.Combine(Application.StartupPath, "Image");
+                    string duongdanmoi = duongdan + "\\" + tenanh;
                     SanPham sp = new SanPham();
                     sp.MaSP = masp.Text;
                     sp.TenSP = tensp.Text;
                     sp.MaLoai = tenloai.SelectedValue.ToString().Trim();
                     sp.MaHang = tenhang.SelectedValue.ToString().Trim();
                     sp.GiaBan = int.Parse(giaban.Text);
-                    sp.HinhAnh = hinhanh.Text;
+                    sp.HinhAnh = duongdanmoi;
                     sp.GhiChu = ghichu.Text;
                     db.SanPhams.InsertOnSubmit(sp);
                     db.SubmitChanges();

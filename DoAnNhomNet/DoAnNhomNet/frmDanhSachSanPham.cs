@@ -84,8 +84,23 @@ namespace DoAnNhomNet
             openFileDialog.RestoreDirectory = true;
             if (openFileDialog.ShowDialog() == DialogResult.OK)
             {
+                // Set the image location and display it in PictureBox
                 picHinhAnh.ImageLocation = openFileDialog.FileName;
                 txtHinhAnh.Text = openFileDialog.FileName;
+
+                // Get the selected file name and destination path
+                string selectedFileName = Path.GetFileName(openFileDialog.FileName);
+                string destinationPath = Path.Combine(Application.StartupPath, "Image", selectedFileName);
+
+                try
+                {
+                    // Copy the selected file to the "hinhanh" folder
+                    File.Copy(openFileDialog.FileName, destinationPath, true);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Đã xảy ra lỗi khi sao chép hình ảnh: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
         }
 

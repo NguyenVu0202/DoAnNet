@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -69,9 +70,14 @@ namespace BUS
             DAO_SanPham.Instance.LoadComBoxTenHang(cb);
         }
         public void Sua(TextBox masp, TextBox tensp, ComboBox tenloai, ComboBox tenhang, TextBox giaban, TextBox hinhanh, TextBox ghichu)
-        {
+        {           
             if (!string.IsNullOrEmpty(hinhanh.Text))
             {
+                string[] cattenanh = hinhanh.Text.Split('\\');
+                int lastIndex = cattenanh.Length - 1;
+                string tenanh = cattenanh[lastIndex];
+                string duongdan = Path.Combine(Application.StartupPath, "Image");
+                string duongdanmoi = duongdan + "\\" + tenanh;
                 SanPham sp = new SanPham
                 {
                     MaSP = masp.Text,
@@ -79,7 +85,7 @@ namespace BUS
                     MaLoai = tenloai.SelectedValue.ToString(),
                     MaHang = tenhang.SelectedValue.ToString(),
                     GiaBan = int.Parse(giaban.Text),
-                    HinhAnh = hinhanh.Text,
+                    HinhAnh = duongdanmoi,
                     GhiChu = ghichu.Text,
 
                 };
