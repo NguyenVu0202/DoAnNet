@@ -60,6 +60,7 @@
             this.chiTiếtHĐToolStripMenuItem.Name = "chiTiếtHĐToolStripMenuItem";
             this.chiTiếtHĐToolStripMenuItem.Size = new System.Drawing.Size(99, 24);
             this.chiTiếtHĐToolStripMenuItem.Text = "Chi Tiết HĐ";
+            this.chiTiếtHĐToolStripMenuItem.Click += new System.EventHandler(this.chiTiếtHĐToolStripMenuItem_Click);
             // 
             // mnuThongKeLuongNV
             // 

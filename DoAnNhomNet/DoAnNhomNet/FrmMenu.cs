@@ -93,5 +93,12 @@ namespace DoAnNhomNet
             frm.MdiParent = this;
             frm.Show();
         }
+
+        private void chiTiếtHĐToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmChiTietHoaDon frm = new FrmChiTietHoaDon();
+            frm.MdiParent = this;
+            frm.Show();
+        }
     }
 }
