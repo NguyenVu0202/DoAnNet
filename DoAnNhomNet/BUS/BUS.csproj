@@ -35,6 +35,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -46,6 +47,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BUSAccount.cs" />
+    <Compile Include="BUSChiTietHoaDon.cs" />
+    <Compile Include="BUSHoaDon.cs" />
+    <Compile Include="BUS_CuaHang.cs" />
+    <Compile Include="BUSKhachHang.cs" />
+    <Compile Include="BUSNhanVien.cs" />
+    <Compile Include="BUSThongKeLuongTheoCH.cs" />
+    <Compile Include="BUSTimKiemKhachHang.cs" />
+    <Compile Include="BUSTimKiemNhanVien.cs" />
+    <Compile Include="BUS_Hang.cs" />
+    <Compile Include="BUS_Kho.cs" />
+    <Compile Include="BUS_Loai.cs" />
+    <Compile Include="BUS_SanPham.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
