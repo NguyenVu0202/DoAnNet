@@ -50,6 +50,8 @@
     <Compile Include="DAOAccount.cs" />
     <Compile Include="DAOChiTietHoaDon.cs" />
     <Compile Include="DAOHoaDon.cs" />
+    <Compile Include="DAOThongKeDoanhThu.cs" />
+    <Compile Include="DAOTimKiemHoaDon.cs" />
     <Compile Include="DAO_CuaHang.cs" />
     <Compile Include="DAOKhachHang.cs" />
     <Compile Include="DAONhanVien.cs" />

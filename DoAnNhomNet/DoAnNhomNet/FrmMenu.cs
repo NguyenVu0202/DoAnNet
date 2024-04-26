@@ -100,5 +100,19 @@ namespace DoAnNhomNet
             frm.MdiParent = this;
             frm.Show();
         }
+
+        private void mnuTimKiemHoaDon_Click(object sender, EventArgs e)
+        {
+            FrmTimKiemHoaDon frm = new FrmTimKiemHoaDon();
+            frm.MdiParent = this;
+            frm.Show();
+        }
+
+        private void mnuThongKeDanhThu_Click(object sender, EventArgs e)
+        {
+            FrmThongKeDoanhThu frm = new FrmThongKeDoanhThu();
+            frm.MdiParent = this;
+            frm.Show();
+        }
     }
 }
