@@ -25,23 +25,38 @@ namespace DAO
         public List<NhanVien> ThongKeLuongNVTheoCH(string maCH)
         {          
             List<NhanVien> list = new List<NhanVien>();
-            TheGioiDiDongDataContext db = new TheGioiDiDongDataContext();
-            var luong1 = db.NhanViens.Where(p=>p.MaCH == maCH).ToList();
-            if (luong1.Any())
+            using (TheGioiDiDongDataContext db = new TheGioiDiDongDataContext())
             {
-                int totalSalary = (int)luong1.Sum(e => e.Luong);
+                var nhanvien = (from nv in db.NhanViens
+                                where nv.MaCH == maCH
+                                select new
+                                {
+                                    nv.MaNV,
+                                    nv.TenNV,
+                                    nv.GioiTinh,
+                                    nv.NgaySinh,
+                                    nv.SDT,
+                                    nv.Luong,
+                                    nv.DiaChi,
+                                    nv.MaCH
+                                }).ToList();
 
-                NhanVien nhanVien = new NhanVien();
-                nhanVien.MaCH = maCH;
-                nhanVien.Luong = totalSalary;
-
-                // Add the summary employee to the list
-                list.Add(nhanVien);
-            }   
-            else
-            {
-                MessageBox.Show("Cửa Hàng Chưa Có Nhân Viên");
-            }    
+                if (nhanvien.Count > 0)
+                {
+                    foreach (var nv in nhanvien)
+                    {
+                        NhanVien nhanVien = new NhanVien();
+                        nhanVien.MaNV = nv.MaNV;
+                        nhanVien.TenNV = nv.TenNV;
+                        nhanVien.GioiTinh = nv.GioiTinh;
+                        nhanVien.SDT = nv.SDT;
+                        nhanVien.Luong = nv.Luong;
+                        nhanVien.DiaChi = nv.DiaChi;
+                        nhanVien.MaCH = nv.MaCH;
+                        list.Add(nhanVien);
+                    }
+                }
+            }              
             return list;
         }
 

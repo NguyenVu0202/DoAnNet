@@ -29,8 +29,14 @@ namespace BUS
             {
                 return new
                 {
-                    MaCuaHang = t.MaCH,
-                    TongLuong = t.Luong,
+                    MaNV = t.MaNV,
+                    TenNV = t.TenNV,
+                    GioiTinh = t.GioiTinh,
+                    NgaySinh = t.NgaySinh,
+                    SDT = t.SDT,
+                    Luong = t.Luong,
+                    DiaChi = t.DiaChi,
+                    MaCH = t.MaCH,
                 };
             }).ToList();
             data.DataSource = dt;

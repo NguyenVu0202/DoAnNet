@@ -145,6 +145,7 @@
             this.btnIn.TabIndex = 30;
             this.btnIn.Text = "In";
             this.btnIn.UseVisualStyleBackColor = true;
+            this.btnIn.Click += new System.EventHandler(this.btnIn_Click);
             // 
             // dtpToiNgay
             // 

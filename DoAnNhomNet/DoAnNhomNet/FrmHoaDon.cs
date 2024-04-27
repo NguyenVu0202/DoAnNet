@@ -121,5 +121,11 @@ namespace DoAnNhomNet
             txtDiaChiKH.Text = "";
             txtSDTKH.Text = "";
         }
+
+        private void btnIn_Click(object sender, EventArgs e)
+        {
+            FrmrptHoaDon frm = new FrmrptHoaDon();
+            frm.ShowDialog();
+        }
     }
 }

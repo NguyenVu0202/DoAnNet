@@ -54,6 +54,7 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.btnIn = new System.Windows.Forms.Button();
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDanhSachHoaDon)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -140,7 +141,7 @@
             // btnXoa
             // 
             this.btnXoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnXoa.Location = new System.Drawing.Point(768, 681);
+            this.btnXoa.Location = new System.Drawing.Point(601, 681);
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.Size = new System.Drawing.Size(135, 50);
             this.btnXoa.TabIndex = 43;
@@ -187,7 +188,7 @@
             // 
             this.btnThem.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnThem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnThem.Location = new System.Drawing.Point(100, 681);
+            this.btnThem.Location = new System.Drawing.Point(19, 681);
             this.btnThem.Name = "btnThem";
             this.btnThem.Size = new System.Drawing.Size(135, 50);
             this.btnThem.TabIndex = 42;
@@ -206,7 +207,7 @@
             // btnSua
             // 
             this.btnSua.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSua.Location = new System.Drawing.Point(408, 681);
+            this.btnSua.Location = new System.Drawing.Point(311, 681);
             this.btnSua.Name = "btnSua";
             this.btnSua.Size = new System.Drawing.Size(135, 50);
             this.btnSua.TabIndex = 46;
@@ -269,7 +270,7 @@
             // 
             this.txtLamMoi.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtLamMoi.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.txtLamMoi.Location = new System.Drawing.Point(1101, 681);
+            this.txtLamMoi.Location = new System.Drawing.Point(903, 681);
             this.txtLamMoi.Name = "txtLamMoi";
             this.txtLamMoi.Size = new System.Drawing.Size(135, 50);
             this.txtLamMoi.TabIndex = 45;
@@ -325,11 +326,24 @@
             this.label1.Text = "HÓA ĐƠN BÁN HÀNG";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // btnIn
+            // 
+            this.btnIn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnIn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnIn.Location = new System.Drawing.Point(1194, 681);
+            this.btnIn.Name = "btnIn";
+            this.btnIn.Size = new System.Drawing.Size(135, 50);
+            this.btnIn.TabIndex = 47;
+            this.btnIn.Text = "IN";
+            this.btnIn.UseVisualStyleBackColor = true;
+            this.btnIn.Click += new System.EventHandler(this.btnIn_Click);
+            // 
             // FrmHoaDon
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1346, 743);
+            this.Controls.Add(this.btnIn);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.btnXoa);
             this.Controls.Add(this.btnThem);
@@ -375,5 +389,6 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnIn;
     }
 }

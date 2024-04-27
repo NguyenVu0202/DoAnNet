@@ -41,5 +41,11 @@ namespace DoAnNhomNet
             dtpToiNgay.Text = DateTime.Now.ToString();
             dgvDoanhThu.DataSource = null;
         }
+
+        private void btnIn_Click(object sender, EventArgs e)
+        {
+            FrmrptThongKeDoanhThu frm = new FrmrptThongKeDoanhThu();
+            frm.ShowDialog();
+        }
     }
 }

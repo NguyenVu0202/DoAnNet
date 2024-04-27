@@ -38,5 +38,11 @@ namespace DoAnNhomNet
         {
             cboMaCH.SelectedIndex = -1;
         }
+
+        private void btnIn_Click(object sender, EventArgs e)
+        {
+            FrmrptInLuongNVCuaCH frm = new FrmrptInLuongNVCuaCH();
+            frm.ShowDialog();
+        }
     }
 }
