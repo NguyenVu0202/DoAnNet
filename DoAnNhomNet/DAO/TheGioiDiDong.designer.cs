@@ -63,7 +63,7 @@ namespace DAO
     #endregion
 		
 		public TheGioiDiDongDataContext() : 
-				base(global::DAO.Properties.Settings.Default.TheGioiDiDongConnectionString, mappingSource)
+				base(global::DAO.Properties.Settings.Default.TheGioiDiDongConnectionString1, mappingSource)
 		{
 			OnCreated();
 		}
