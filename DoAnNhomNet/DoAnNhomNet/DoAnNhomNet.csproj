@@ -34,8 +34,8 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
-    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
-    <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
     <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.Data.Desktop.v21.2, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.Data.v21.2, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
@@ -167,6 +167,9 @@
     <Compile Include="FormDanhMucHang.Designer.cs">
       <DependentUpon>FormDanhMucHang.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmrptThongKeSanPhamDaBanTheoMaCH.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="FrmrptHoaDon.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -191,6 +194,9 @@
     <Compile Include="FrmThongKeDoanhThu.Designer.cs">
       <DependentUpon>FrmThongKeDoanhThu.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmrptThongKeSanPhamDaBanTheoMaCH.Designer.cs">
+      <DependentUpon>FrmrptThongKeSanPhamDaBanTheoMaCH.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmThongKeLuongNhanVienTheoCuaHang.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -199,6 +205,12 @@
     </Compile>
     <Compile Include="FrmTimKiemHoaDon.cs">
       <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmThongKeSanPham.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmThongKeSanPham.Designer.cs">
+      <DependentUpon>frmThongKeSanPham.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmTimKiemHoaDon.Designer.cs">
       <DependentUpon>FrmTimKiemHoaDon.cs</DependentUpon>
@@ -209,19 +221,31 @@
     <Compile Include="FrmTimKiemKhachHang.Designer.cs">
       <DependentUpon>FrmTimKiemKhachHang.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmTimKiemKho.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTimKiemKho.Designer.cs">
+      <DependentUpon>frmTimKiemKho.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmTimKiemNhanVien.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FrmTimKiemNhanVien.Designer.cs">
       <DependentUpon>FrmTimKiemNhanVien.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmTimKiemSanPham.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTimKiemSanPham.Designer.cs">
+      <DependentUpon>frmTimKiemSanPham.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SqlServerTypes\Loader.cs" />
-    <Compile Include="TheGioiDiDongDataSet1.Designer.cs">
+    <Compile Include="TheGioiDiDongDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>TheGioiDiDongDataSet1.xsd</DependentUpon>
+      <DependentUpon>TheGioiDiDongDataSet.xsd</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
@@ -262,6 +286,9 @@
     <EmbeddedResource Include="FrmRegister.resx">
       <DependentUpon>FrmRegister.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmrptThongKeSanPhamDaBanTheoMaCH.resx">
+      <DependentUpon>FrmrptThongKeSanPhamDaBanTheoMaCH.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmrptHoaDon.resx">
       <DependentUpon>FrmrptHoaDon.cs</DependentUpon>
     </EmbeddedResource>
@@ -277,14 +304,23 @@
     <EmbeddedResource Include="FrmThongKeLuongNhanVienTheoCuaHang.resx">
       <DependentUpon>FrmThongKeLuongNhanVienTheoCuaHang.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmThongKeSanPham.resx">
+      <DependentUpon>frmThongKeSanPham.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmTimKiemHoaDon.resx">
       <DependentUpon>FrmTimKiemHoaDon.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmTimKiemKhachHang.resx">
       <DependentUpon>FrmTimKiemKhachHang.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmTimKiemKho.resx">
+      <DependentUpon>frmTimKiemKho.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmTimKiemNhanVien.resx">
       <DependentUpon>FrmTimKiemNhanVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTimKiemSanPham.resx">
+      <DependentUpon>frmTimKiemSanPham.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -296,6 +332,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="RptThongKeSanPhamDaBanCuaCuaHang.rdlc" />
     <EmbeddedResource Include="RptInHoaDon.rdlc" />
     <EmbeddedResource Include="RptInLuongNVCuaCuaHang.rdlc" />
     <EmbeddedResource Include="RptThongKeDoanhThu.rdlc" />
@@ -309,16 +346,16 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <None Include="TheGioiDiDongDataSet1.xsc">
-      <DependentUpon>TheGioiDiDongDataSet1.xsd</DependentUpon>
+    <None Include="TheGioiDiDongDataSet.xsc">
+      <DependentUpon>TheGioiDiDongDataSet.xsd</DependentUpon>
     </None>
-    <None Include="TheGioiDiDongDataSet1.xsd">
+    <None Include="TheGioiDiDongDataSet.xsd">
       <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>TheGioiDiDongDataSet1.Designer.cs</LastGenOutput>
+      <LastGenOutput>TheGioiDiDongDataSet.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
-    <None Include="TheGioiDiDongDataSet1.xss">
-      <DependentUpon>TheGioiDiDongDataSet1.xsd</DependentUpon>
+    <None Include="TheGioiDiDongDataSet.xss">
+      <DependentUpon>TheGioiDiDongDataSet.xsd</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>
@@ -339,6 +376,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Screenshot 2024-04-18 131820.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="SqlServerTypes\readme.htm" />

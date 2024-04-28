@@ -80,6 +80,9 @@
     <Compile Include="BUS_Kho.cs" />
     <Compile Include="BUS_Loai.cs" />
     <Compile Include="BUS_SanPham.cs" />
+    <Compile Include="BUS_ThongKeSanPham.cs" />
+    <Compile Include="BUS_TimKiemKho.cs" />
+    <Compile Include="BUS_TimKiemSanPham.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
