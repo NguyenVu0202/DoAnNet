@@ -1,4 +1,5 @@
 ﻿using BUS;
+using DAO;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -23,15 +24,11 @@ namespace DoAnNhomNet
             LoadKho();
             LoadCoBoBoxMaCH();
             LoadCoBoBoxMaSP();
+            LoadComboBoxMaCH();
         }
         private void dgvDanhSachKho_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            var row = dgvDanhSachKho.Rows[dgvDanhSachKho.CurrentCell.RowIndex];
-            txtMaKho.Text = row.Cells["MaKHo"].Value.ToString();
-            cboMaCH.Text = row.Cells["MaCH"].Value.ToString();
-            cboMaSP.Text = row.Cells["MaSP"].Value.ToString();
-            txtSoLuong.Text = row.Cells["SoLuong"].Value.ToString();
-           
+            BUS_Kho.Instance.LoadDgvLenForm(txtMaKho, cboMaCH, cboMaSP, txtSoLuong, dgvDanhSachKho);  
         }
         public void LoadKho()
         {
@@ -48,9 +45,21 @@ namespace DoAnNhomNet
 
         }
 
-        private void frmDanhSachKho_Load(object sender, EventArgs e)
+        private void LoadComboBoxMaCH()
         {
-            
+            BUS_Kho.Instance.LoadCuaHang(cboMaCH);
+        }
+
+        private void btnThem_Click(object sender, EventArgs e)
+        {
+            BUS_Kho.Instance.ThemKho(txtMaKho, cboMaCH, cboMaSP, txtSoLuong);
+            LoadKho();
+        }
+
+        private void btnXoa_Click(object sender, EventArgs e)
+        {
+            BUS_Kho.Instance.XoaKho(txtMaKho);
+            LoadKho();
         }
     }
 }

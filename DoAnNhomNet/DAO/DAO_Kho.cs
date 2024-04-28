@@ -47,7 +47,22 @@ namespace DAO
 
             }
         }
-       
+
+        public void LoadComBoBoxMaCH(ComboBox cb)
+        {
+            List<string> lst = new List<string>();
+            using (TheGioiDiDongDataContext db = new TheGioiDiDongDataContext())
+            {
+                var mach = from k in db.CuaHangs
+                           select new { k.MaCH };
+                foreach (var item in mach)
+                {
+                    lst.Add(item.MaCH);
+                }
+                cb.DataSource = lst;
+            }
+        }
+
         public List<Kho> Xem()
         {
             List<Kho> sp = new List<Kho>();
@@ -74,6 +89,61 @@ namespace DAO
                 }
             }
             return sp;
+        }
+
+        public void ThemKho(Kho kho)
+        {
+            try
+            {
+                using (TheGioiDiDongDataContext db = new TheGioiDiDongDataContext())
+                {
+                    db.Khos.InsertOnSubmit(kho);
+                    db.SubmitChanges();
+                    MessageBox.Show("Thêm Thành Công");
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Thêm Thất Bại" + ex.Message);
+            }
+        }
+
+        public void XoaKho(string maKho)
+        {
+            DialogResult r = MessageBox.Show("Bạn có muốn xóa khách hàng này?", "Thoát", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (r == DialogResult.Yes)
+            {
+                try
+                {
+                    using(TheGioiDiDongDataContext db = new TheGioiDiDongDataContext())
+                    {
+                        var kho = db.Khos.FirstOrDefault(p => p.MaKho == maKho);
+                        db.Khos.DeleteOnSubmit(kho);
+                        db.SubmitChanges();
+                        MessageBox.Show("Xóa Thành Công");
+                    }    
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Xóa Thất Bại" + ex.Message);
+                }
+            }
+        }
+
+        public void LoadDgvLenForm(TextBox maKho, ComboBox maCH, ComboBox maSP, TextBox soLuong, DataGridView data)
+        {
+            using(TheGioiDiDongDataContext db = new TheGioiDiDongDataContext())
+            {
+                var rowIndex = data.SelectedCells[0].RowIndex;
+                var row = data.Rows[rowIndex];
+                maKho.Text = row.Cells[0].Value.ToString().Trim();
+                maCH.Text = row.Cells[1].Value.ToString().Trim();
+                var sp = (from s in db.SanPhams
+                         where s.MaSP == row.Cells[2].Value.ToString().Trim()
+                         select s.TenSP).FirstOrDefault();
+                maSP.Text = sp.ToString();
+                soLuong.Text = row.Cells[3].Value.ToString().Trim();
+            }               
         }
     }
 }
