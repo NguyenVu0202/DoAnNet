@@ -27,7 +27,7 @@ namespace DoAnNhomNet
         private void cboMaHD_TextChanged(object sender, EventArgs e)
         {
             // TODO: This line of code loads data into the 'TheGioiDiDongDataSet1.HienThiHoaDonTheoMa' table. You can move, or remove it, as needed.
-            this.HienThiHoaDonTheoMaTableAdapter.Fill(this.TheGioiDiDongDataSet1.HienThiHoaDonTheoMa, cboMaHD.Text);
+            this.HienThiHoaDonTheoMaTableAdapter.Fill(this.TheGioiDiDongDataSet.HienThiHoaDonTheoMa, cboMaHD.Text);
 
             this.rptHoaDon.RefreshReport();
         }

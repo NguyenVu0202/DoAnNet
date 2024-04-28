@@ -424,7 +424,6 @@
       </Textbox>
       <Line Name="Line7">
         <Top>2.10609cm</Top>
-        <Left>0cm</Left>
         <Height>0cm</Height>
         <Width>18.669cm</Width>
         <ZIndex>4</ZIndex>
@@ -436,7 +435,6 @@
       </Line>
       <Line Name="Line8">
         <Top>5.19642cm</Top>
-        <Left>0cm</Left>
         <Height>0cm</Height>
         <Width>18.669cm</Width>
         <ZIndex>5</ZIndex>
@@ -463,18 +461,18 @@
   </Page>
   <AutoRefresh>0</AutoRefresh>
   <DataSources>
-    <DataSource Name="TheGioiDiDongDataSet1">
+    <DataSource Name="TheGioiDiDongDataSet">
       <ConnectionProperties>
         <DataProvider>System.Data.DataSet</DataProvider>
         <ConnectString>/* Local Connection */</ConnectString>
       </ConnectionProperties>
-      <rd:DataSourceID>4c51afe3-ae1b-4eb3-84f4-656f1c8efc3d</rd:DataSourceID>
+      <rd:DataSourceID>74481bf2-f3d7-4c30-b515-7611024b2a91</rd:DataSourceID>
     </DataSource>
   </DataSources>
   <DataSets>
     <DataSet Name="DataSet1">
       <Query>
-        <DataSourceName>TheGioiDiDongDataSet1</DataSourceName>
+        <DataSourceName>TheGioiDiDongDataSet</DataSourceName>
         <CommandText>/* Local Query */</CommandText>
       </Query>
       <Fields>
@@ -496,8 +494,8 @@
         </Field>
       </Fields>
       <rd:DataSetInfo>
-        <rd:DataSetName>TheGioiDiDongDataSet1</rd:DataSetName>
-        <rd:SchemaPath>C:\Users\NGUYEN VU\Desktop\DoAnNhomNet\DoAnNhomNet\TheGioiDiDongDataSet1.xsd</rd:SchemaPath>
+        <rd:DataSetName>TheGioiDiDongDataSet</rd:DataSetName>
+        <rd:SchemaPath>C:\DoAnNhomNet\DoAnNhomNet\TheGioiDiDongDataSet.xsd</rd:SchemaPath>
         <rd:TableName>ThongKeDoanhThuTheoCH</rd:TableName>
         <rd:TableAdapterFillMethod>Fill</rd:TableAdapterFillMethod>
         <rd:TableAdapterGetDataMethod>GetData</rd:TableAdapterGetDataMethod>

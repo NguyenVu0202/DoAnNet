@@ -37,7 +37,7 @@ namespace DoAnNhomNet
             }
 
             // Load dữ liệu vào bảng từ cơ sở dữ liệu
-            this.ThongKeDoanhThuTheoCHTableAdapter.Fill(this.TheGioiDiDongDataSet1.ThongKeDoanhThuTheoCH, cboMaCH.Text, tuNgay, denNgay);
+            this.ThongKeDoanhThuTheoCHTableAdapter.Fill(this.TheGioiDiDongDataSet.ThongKeDoanhThuTheoCH, cboMaCH.Text, tuNgay, denNgay);
 
             // Cập nhật báo cáo để hiển thị dữ liệu mới
             this.rptThongKeDoanhThu.RefreshReport();

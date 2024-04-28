@@ -31,27 +31,27 @@
             this.components = new System.ComponentModel.Container();
             Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
             this.HienThiHoaDonTheoMaBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.TheGioiDiDongDataSet1 = new DoAnNhomNet.TheGioiDiDongDataSet1();
+            this.TheGioiDiDongDataSet = new DoAnNhomNet.TheGioiDiDongDataSet();
             this.rptHoaDon = new Microsoft.Reporting.WinForms.ReportViewer();
             this.label1 = new System.Windows.Forms.Label();
             this.cboMaHD = new System.Windows.Forms.ComboBox();
             this.ThongKeDoanhThuTheoCHBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.ThongKeDoanhThuTheoCHTableAdapter = new DoAnNhomNet.TheGioiDiDongDataSet1TableAdapters.ThongKeDoanhThuTheoCHTableAdapter();
-            this.HienThiHoaDonTheoMaTableAdapter = new DoAnNhomNet.TheGioiDiDongDataSet1TableAdapters.HienThiHoaDonTheoMaTableAdapter();
+            this.ThongKeDoanhThuTheoCHTableAdapter = new DoAnNhomNet.TheGioiDiDongDataSetTableAdapters.ThongKeDoanhThuTheoCHTableAdapter();
+            this.HienThiHoaDonTheoMaTableAdapter = new DoAnNhomNet.TheGioiDiDongDataSetTableAdapters.HienThiHoaDonTheoMaTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.HienThiHoaDonTheoMaBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TheGioiDiDongDataSet1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TheGioiDiDongDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ThongKeDoanhThuTheoCHBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // HienThiHoaDonTheoMaBindingSource
             // 
             this.HienThiHoaDonTheoMaBindingSource.DataMember = "HienThiHoaDonTheoMa";
-            this.HienThiHoaDonTheoMaBindingSource.DataSource = this.TheGioiDiDongDataSet1;
+            this.HienThiHoaDonTheoMaBindingSource.DataSource = this.TheGioiDiDongDataSet;
             // 
             // TheGioiDiDongDataSet1
             // 
-            this.TheGioiDiDongDataSet1.DataSetName = "TheGioiDiDongDataSet1";
-            this.TheGioiDiDongDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            this.TheGioiDiDongDataSet.DataSetName = "TheGioiDiDongDataSet1";
+            this.TheGioiDiDongDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // rptHoaDon
             // 
@@ -88,7 +88,7 @@
             // ThongKeDoanhThuTheoCHBindingSource
             // 
             this.ThongKeDoanhThuTheoCHBindingSource.DataMember = "ThongKeDoanhThuTheoCH";
-            this.ThongKeDoanhThuTheoCHBindingSource.DataSource = this.TheGioiDiDongDataSet1;
+            this.ThongKeDoanhThuTheoCHBindingSource.DataSource = this.TheGioiDiDongDataSet;
             // 
             // ThongKeDoanhThuTheoCHTableAdapter
             // 
@@ -110,7 +110,7 @@
             this.Text = "FrmrptHoaDon";
             this.Load += new System.EventHandler(this.FrmrptHoaDon_Load);
             ((System.ComponentModel.ISupportInitialize)(this.HienThiHoaDonTheoMaBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TheGioiDiDongDataSet1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TheGioiDiDongDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ThongKeDoanhThuTheoCHBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -121,11 +121,11 @@
 
         private Microsoft.Reporting.WinForms.ReportViewer rptHoaDon;
         private System.Windows.Forms.BindingSource HienThiHoaDonTheoMaBindingSource;
-        private TheGioiDiDongDataSet1 TheGioiDiDongDataSet1;
+        private TheGioiDiDongDataSet TheGioiDiDongDataSet;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox cboMaHD;
         private System.Windows.Forms.BindingSource ThongKeDoanhThuTheoCHBindingSource;
-        private TheGioiDiDongDataSet1TableAdapters.ThongKeDoanhThuTheoCHTableAdapter ThongKeDoanhThuTheoCHTableAdapter;
-        private TheGioiDiDongDataSet1TableAdapters.HienThiHoaDonTheoMaTableAdapter HienThiHoaDonTheoMaTableAdapter;
+        private TheGioiDiDongDataSetTableAdapters.ThongKeDoanhThuTheoCHTableAdapter ThongKeDoanhThuTheoCHTableAdapter;
+        private TheGioiDiDongDataSetTableAdapters.HienThiHoaDonTheoMaTableAdapter HienThiHoaDonTheoMaTableAdapter;
     }
 }

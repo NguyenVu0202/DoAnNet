@@ -9,7 +9,7 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>Thống Kê Doanh Thu</Value>
+                <Value>Thống Kê Lương Nhân Viên</Value>
                 <Style>
                   <FontSize>20pt</FontSize>
                 </Style>
@@ -22,9 +22,9 @@
         </Paragraphs>
         <rd:DefaultName>Textbox1</rd:DefaultName>
         <Top>0.45141cm</Top>
-        <Left>6.83567cm</Left>
+        <Left>6.20067cm</Left>
         <Height>1.00217cm</Height>
-        <Width>8.17266cm</Width>
+        <Width>9.23099cm</Width>
         <Style>
           <Border>
             <Style>None</Style>
@@ -595,6 +595,7 @@
                         <PaddingBottom>2pt</PaddingBottom>
                       </Style>
                     </Textbox>
+                    <rd:Selected>true</rd:Selected>
                   </CellContents>
                 </TablixCell>
               </TablixCells>
@@ -627,7 +628,7 @@
         <Top>2.9337cm</Top>
         <Left>0.2667cm</Left>
         <Height>1.2cm</Height>
-        <Width>24.0005cm</Width>
+        <Width>24.00049cm</Width>
         <ZIndex>2</ZIndex>
         <Style>
           <Border>
@@ -637,7 +638,6 @@
       </Tablix>
       <Line Name="Line8">
         <Top>4.61433cm</Top>
-        <Left>0cm</Left>
         <Height>0cm</Height>
         <Width>24.5847cm</Width>
         <ZIndex>3</ZIndex>
@@ -732,18 +732,18 @@
   </Page>
   <AutoRefresh>0</AutoRefresh>
   <DataSources>
-    <DataSource Name="TheGioiDiDongDataSet1">
+    <DataSource Name="TheGioiDiDongDataSet">
       <ConnectionProperties>
         <DataProvider>System.Data.DataSet</DataProvider>
         <ConnectString>/* Local Connection */</ConnectString>
       </ConnectionProperties>
-      <rd:DataSourceID>8ff0819e-2215-4ec7-b599-441d0a87f165</rd:DataSourceID>
+      <rd:DataSourceID>f21ca880-fdff-4b95-9f98-f4e4d1b24230</rd:DataSourceID>
     </DataSource>
   </DataSources>
   <DataSets>
     <DataSet Name="DataSet1">
       <Query>
-        <DataSourceName>TheGioiDiDongDataSet1</DataSourceName>
+        <DataSourceName>TheGioiDiDongDataSet</DataSourceName>
         <CommandText>/* Local Query */</CommandText>
       </Query>
       <Fields>
@@ -781,8 +781,8 @@
         </Field>
       </Fields>
       <rd:DataSetInfo>
-        <rd:DataSetName>TheGioiDiDongDataSet1</rd:DataSetName>
-        <rd:SchemaPath>C:\Users\NGUYEN VU\Desktop\DoAnNhomNet\DoAnNhomNet\TheGioiDiDongDataSet1.xsd</rd:SchemaPath>
+        <rd:DataSetName>TheGioiDiDongDataSet</rd:DataSetName>
+        <rd:SchemaPath>C:\DoAnNhomNet\DoAnNhomNet\TheGioiDiDongDataSet.xsd</rd:SchemaPath>
         <rd:TableName>ThongKeLuongNVTheoMaCH</rd:TableName>
         <rd:TableAdapterFillMethod>Fill</rd:TableAdapterFillMethod>
         <rd:TableAdapterGetDataMethod>GetData</rd:TableAdapterGetDataMethod>

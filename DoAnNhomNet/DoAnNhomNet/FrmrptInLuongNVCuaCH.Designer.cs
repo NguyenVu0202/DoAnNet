@@ -33,9 +33,9 @@
             this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
             this.label1 = new System.Windows.Forms.Label();
             this.cboMaCH = new System.Windows.Forms.ComboBox();
-            this.TheGioiDiDongDataSet1 = new DoAnNhomNet.TheGioiDiDongDataSet1();
+            this.TheGioiDiDongDataSet1 = new DoAnNhomNet.TheGioiDiDongDataSet();
             this.ThongKeLuongNVTheoMaCHBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.ThongKeLuongNVTheoMaCHTableAdapter = new DoAnNhomNet.TheGioiDiDongDataSet1TableAdapters.ThongKeLuongNVTheoMaCHTableAdapter();
+            this.ThongKeLuongNVTheoMaCHTableAdapter = new DoAnNhomNet.TheGioiDiDongDataSetTableAdapters.ThongKeLuongNVTheoMaCHTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.TheGioiDiDongDataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ThongKeLuongNVTheoMaCHBindingSource)).BeginInit();
             this.SuspendLayout();
@@ -110,7 +110,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox cboMaCH;
         private System.Windows.Forms.BindingSource ThongKeLuongNVTheoMaCHBindingSource;
-        private TheGioiDiDongDataSet1 TheGioiDiDongDataSet1;
-        private TheGioiDiDongDataSet1TableAdapters.ThongKeLuongNVTheoMaCHTableAdapter ThongKeLuongNVTheoMaCHTableAdapter;
+        private TheGioiDiDongDataSet TheGioiDiDongDataSet1;
+        private TheGioiDiDongDataSetTableAdapters.ThongKeLuongNVTheoMaCHTableAdapter ThongKeLuongNVTheoMaCHTableAdapter;
     }
 }

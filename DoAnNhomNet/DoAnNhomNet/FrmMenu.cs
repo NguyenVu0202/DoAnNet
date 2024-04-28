@@ -129,5 +129,11 @@ namespace DoAnNhomNet
             frm.Show();
         }
 
+        private void mnuThongKeDanhThu_Click_1(object sender, EventArgs e)
+        {
+            FrmThongKeDoanhThu frm = new FrmThongKeDoanhThu();
+            frm.MdiParent = this;
+            frm.Show();
+        }
     }
 }

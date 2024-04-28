@@ -141,7 +141,7 @@
             // btnXoa
             // 
             this.btnXoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnXoa.Location = new System.Drawing.Point(768, 681);
+            this.btnXoa.Location = new System.Drawing.Point(646, 681);
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.Size = new System.Drawing.Size(135, 50);
             this.btnXoa.TabIndex = 43;
@@ -188,7 +188,7 @@
             // 
             this.btnThem.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnThem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnThem.Location = new System.Drawing.Point(100, 681);
+            this.btnThem.Location = new System.Drawing.Point(53, 681);
             this.btnThem.Name = "btnThem";
             this.btnThem.Size = new System.Drawing.Size(135, 50);
             this.btnThem.TabIndex = 42;
@@ -207,7 +207,7 @@
             // btnSua
             // 
             this.btnSua.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSua.Location = new System.Drawing.Point(408, 681);
+            this.btnSua.Location = new System.Drawing.Point(320, 681);
             this.btnSua.Name = "btnSua";
             this.btnSua.Size = new System.Drawing.Size(135, 50);
             this.btnSua.TabIndex = 46;
@@ -270,7 +270,7 @@
             // 
             this.txtLamMoi.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtLamMoi.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.txtLamMoi.Location = new System.Drawing.Point(1101, 681);
+            this.txtLamMoi.Location = new System.Drawing.Point(920, 681);
             this.txtLamMoi.Name = "txtLamMoi";
             this.txtLamMoi.Size = new System.Drawing.Size(135, 50);
             this.txtLamMoi.TabIndex = 45;

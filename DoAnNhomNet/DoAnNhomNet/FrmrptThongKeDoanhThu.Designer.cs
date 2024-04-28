@@ -31,9 +31,9 @@
             this.components = new System.ComponentModel.Container();
             Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
             this.ThongKeDoanhThuTheoCHBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.TheGioiDiDongDataSet1 = new DoAnNhomNet.TheGioiDiDongDataSet1();
+            this.TheGioiDiDongDataSet = new DoAnNhomNet.TheGioiDiDongDataSet();
             this.rptThongKeDoanhThu = new Microsoft.Reporting.WinForms.ReportViewer();
-            this.ThongKeDoanhThuTheoCHTableAdapter = new DoAnNhomNet.TheGioiDiDongDataSet1TableAdapters.ThongKeDoanhThuTheoCHTableAdapter();
+            this.ThongKeDoanhThuTheoCHTableAdapter = new DoAnNhomNet.TheGioiDiDongDataSetTableAdapters.ThongKeDoanhThuTheoCHTableAdapter();
             this.cboMaCH = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -41,18 +41,18 @@
             this.dtpTuNgay = new System.Windows.Forms.DateTimePicker();
             this.dtpDenNgay = new System.Windows.Forms.DateTimePicker();
             ((System.ComponentModel.ISupportInitialize)(this.ThongKeDoanhThuTheoCHBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TheGioiDiDongDataSet1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TheGioiDiDongDataSet)).BeginInit();
             this.SuspendLayout();
             // 
             // ThongKeDoanhThuTheoCHBindingSource
             // 
             this.ThongKeDoanhThuTheoCHBindingSource.DataMember = "ThongKeDoanhThuTheoCH";
-            this.ThongKeDoanhThuTheoCHBindingSource.DataSource = this.TheGioiDiDongDataSet1;
+            this.ThongKeDoanhThuTheoCHBindingSource.DataSource = this.TheGioiDiDongDataSet;
             // 
             // TheGioiDiDongDataSet1
             // 
-            this.TheGioiDiDongDataSet1.DataSetName = "TheGioiDiDongDataSet1";
-            this.TheGioiDiDongDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            this.TheGioiDiDongDataSet.DataSetName = "TheGioiDiDongDataSet1";
+            this.TheGioiDiDongDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // rptThongKeDoanhThu
             // 
@@ -144,7 +144,7 @@
             this.Text = "FrmrptThongKeDoanhThu";
             this.Load += new System.EventHandler(this.FrmrptThongKeDoanhThu_Load);
             ((System.ComponentModel.ISupportInitialize)(this.ThongKeDoanhThuTheoCHBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TheGioiDiDongDataSet1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TheGioiDiDongDataSet)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -154,8 +154,8 @@
 
         private Microsoft.Reporting.WinForms.ReportViewer rptThongKeDoanhThu;
         private System.Windows.Forms.BindingSource ThongKeDoanhThuTheoCHBindingSource;
-        private TheGioiDiDongDataSet1 TheGioiDiDongDataSet1;
-        private TheGioiDiDongDataSet1TableAdapters.ThongKeDoanhThuTheoCHTableAdapter ThongKeDoanhThuTheoCHTableAdapter;
+        private TheGioiDiDongDataSet TheGioiDiDongDataSet;
+        private TheGioiDiDongDataSetTableAdapters.ThongKeDoanhThuTheoCHTableAdapter ThongKeDoanhThuTheoCHTableAdapter;
         private System.Windows.Forms.ComboBox cboMaCH;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
